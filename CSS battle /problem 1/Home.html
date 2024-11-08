@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Library</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .game-card {
+      background-color: #FF5E5E;
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05); /* Slightly enlarges card on hover */
+    }
+
+    .game-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .game-card h2 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .game-card p {
+      font-size: 14px;
+    }
+
+    .add-game {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FF5E5E;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>My Game Library</h1>
+      <p>Browse Last Played Games</p>
+    </div>
+
+
+    <a href="Player1.html" class="game-card">
+      <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2F1ac8149b-d43a-4d6a-bb62-2393606d663a-removebg-preview.png?alt=media&token=4eaf6ce1-51c6-40cc-9870-6941b459dbf5" alt="Apex Legends">
+      <h2>Apex Legends</h2>
+      <p>Hours Played: 87</p>
+    </a>
+    <a href="Player2.html" class="game-card">
+      <img width="130" src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2F171-1710970_anime-boy-png.png?alt=media&token=e9eb63bb-95e8-4112-a050-05cc2b7c01b9" alt="Apex Legends">
+      <h2>Shashi</h2>
+      <p>Hours Played: 86</p>
+    </a>
+
+    <div class="add-game">
+      <span>+</span> Add a Game
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Characters</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 20px;
+      color: #333;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      padding: 10px 0;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #E23636;
+      font-weight: bold;
+    }
+
+    .header h1 span {
+      color: #333;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .header nav a {
+      margin: 0 10px;
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .header nav a:hover {
+      color: #E23636;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      margin: 20px 0;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* Card Container */
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px 0;
+    }
+
+    /* Character Card */
+    .character-card {
+      width: 200px;
+      height: 280px;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      color: white;
+      text-align: left;
+      padding: 15px;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+    }
+
+    .character-card img {
+      position: absolute;
+      top: 20px; /* Aligns the image better with the card */
+      right: -20px;
+      width: 140px;
+      height: auto;
+      transform: rotate(-10deg); /* Slight rotation for a dynamic look */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .character-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .character-card:hover img {
+      transform: rotate(-5deg) scale(1.05); /* Reduces rotation on hover and slightly enlarges */
+    }
+
+    /* Character Card Text */
+    .character-card .text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .character-card .text h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .character-card .text p {
+      font-size: 14px;
+      font-weight: normal;
+      color: #ddd;
+    }
+
+    /* Background Colors */
+    .card1 {
+      background: linear-gradient(135deg, #4a90e2, #9013fe);
+    }
+
+    .card2 {
+      background: linear-gradient(135deg, #f5a623, #d0021b);
+    }
+
+    .card3 {
+      background: linear-gradient(135deg, #bd10e0, #4a90e2);
+    }
+
+    .card4 {
+      background: linear-gradient(135deg, #f56262, #e43a15);
+    }
+
+    /* Footer Links */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px 0;
+      color: #666;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #666;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      color: #E23636;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <div class="header">
+    <h1>MARVEL <span>Characters</span></h1>
+    <nav>
+      <a href="#">Characters</a>
+      <a href="#">Comics</a>
+      <a href="#">Stories</a>
+      <a href="#">Movies</a>
+      <a href="#">TV Shows</a>
+    </nav>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search Marvel">
+  </div>
+
+  <!-- Character Cards -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="character-card card1">
+      <div class="text">
+        <h3>Captain America</h3>
+        <p>Steve Rogers</p>
+      </div>
+      <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2Fpngwing.com-removebg-preview.png?alt=media&token=a52b96f2-e635-4da7-a8a0-08ea67c75e0b" alt="Captain America">
+    </div>
+
+    <!-- Card 2 -->
+    <div class="character-card card2">
+      <div class="text">
+        <h3>Iron Man</h3>
+        <p>Tony Stark</p>
+      </div>
+      <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2Fpurepng.com-ironman-avengersironmansuperheromarvel-comicscharactermarvel-studiosrobert-downey-jrtony-stark-1701528612205ho4uq-removebg-preview.png?alt=media&token=746602f6-8e6a-4494-a449-d0f984132357" alt="Iron Man">
+    </div>
+
+    <!-- Card 3 -->
+    <div class="character-card card3">
+      <div class="text">
+        <h3>Black Widow</h3>
+        <p>Natasha Romanoff</p>
+      </div>
+      <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2Fpng-clipart-black-widow-black-widow-clint-barton-iron-man-vision-captain-america-black-widow-avengers-superhero-thumbnail-removebg-preview.png?alt=media&token=e0b87e81-6222-40e0-9d24-4c3643dde5aa" alt="Black Widow">
+    </div>
+
+    <!-- Card 4 -->
+    <div class="character-card card4">
+      <div class="text">
+        <h3>Spider-Man</h3>
+        <p>Peter Parker</p>
+      </div>
+      <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2FSpider-Man-removebg-preview.png?alt=media&token=81f4a7e2-60bf-4b55-95c2-1e8349f40eeb" alt="Spider-Man">
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="footer">
+    <div>
+      <a href="#">Previous</a>
+    </div>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+    <div>
+      <a href="#">Next</a>
+    </div>
+  </div>
+
+</body>
+</html>

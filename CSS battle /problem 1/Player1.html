@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Details</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #FF5E5E;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-button:hover {
+      background-color: #e04b4b;
+    }
+
+    .game-details-card {
+      background-color: #FF5E5E;
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .character-info {
+      flex: 1;
+      padding-right: 15px;
+    }
+
+    .character-info h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .character-info p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .character-stats p {
+      margin: 4px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .character-image img {
+      width: 420px; 
+      height: auto;
+  
+    }
+
+    .achievements {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .achievements img {
+      width: 40px; /* Smaller icon */
+      height: auto;
+      margin-right: 15px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .element2 {
+      font-size: 16px;
+      color: #333;
+      text-align: left;
+    }
+
+    .element2 p:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FF5E5E;
+      margin-bottom: 2px;
+    }
+
+    .element2 p:last-child {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <a href="Home.html" class="back-button">Back to Home</a>
+    
+    <div class="game-details-card">
+        <div class="character-info">
+            <h2>Apex Legends</h2>
+            <br>
+            <p>Most Played Legend</p>
+            <div class="character-stats">
+                <br>
+                <p>Games: 87</p>
+                <p>Kills: 152</p>
+                <p>Assists: 54</p>
+            </div>
+        </div>
+        <div class="character-image">
+            <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2F1ac8149b-d43a-4d6a-bb62-2393606d663a-removebg-preview.png?alt=media&token=4eaf6ce1-51c6-40cc-9870-6941b459dbf5" alt="Apex Legends">
+        </div>
+    </div>
+    
+    <div class="achievements">
+        <div class="element1">
+            <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2Fcb364b84da18358386df9016d72a3c41.png_wh300-removebg-preview.png?alt=media&token=8707f23c-6109-4077-ad86-4d803c7b0f87" alt="Achievement Icon">
+        </div>
+        <div class="element2">
+            <p>37</p>
+            <p>Achievements Completed</p>
+        </div>
+    </div>
+
+    <div class="achievements">
+        <div class="element1">
+            <img src="https://firebasestorage.googleapis.com/v0/b/ducklingfit.appspot.com/o/extra%2F8ad184379674b5faa118e22ecd0ef56b.png?alt=media&token=e2da1700-aee8-410b-a28d-b75b84814f73" alt="Ranked Points Icon">
+        </div>
+        <div class="element2">
+            <p>864</p>
+            <p>Ranked Points</p>
+        </div>
+    </div>
+    
+  </div>
+</body>
+</html>
